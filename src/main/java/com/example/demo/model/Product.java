@@ -1,15 +1,16 @@
 package com.example.demo.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
     private int id;
+    @Setter
     private String name;
+    @Override
+    public String toString(){
+        return this.name;
+    }
 }
